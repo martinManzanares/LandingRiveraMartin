@@ -4,71 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="C:\Users\paude\Desktop\aplicacionesMoviles\asignacion1\styles.css" rel="stylesheet" type="text/css">
     <title> Mi Landing Page </title>
 </head>
 
 <body>
+     <!-- Barra de Navegacion -->
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Header"> Portada </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Hobbies"> Pasatiempo </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Series"> Series </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Peliculas"> Peliculas </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contacto"> Contacto </a>
+            </li>
+        </ul>
+    </nav>
+
+     <!-- Seccion de Portada -->
     <header id="Header">
         <h1> Martín Paúl Rivera Manzanares </h1>
-        <img src="C:\Users\paude\Pictures\mia.jpg" alt="">
+        <div>
+            <img class="img-display" src="C:\Users\paude\Pictures\mia.jpg" alt="css centrar imagen" />
+        </div>
         <p> 
             Bienvenido a mi landing page creada para la asignacion #1 de la materia "Aplicaciones Moviles", el objetivo principal de este 
             curso formativo es el aprendizaje del desarrollo de aplicaciones Android y la interacción con los recursos del télefono móvil. 
         </p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#Header"> Portada </a></li>
-            <li><a href="#Hobbies"> Pasatiempos </a></li>
-            <li><a href="#Series"> Series </a></li>
-            <li><a href="#Peliculas"> Peliculas </a></li>
-            <li><a href="#Contacto"> Contacto </a></li>
-        </ul>
-    </nav>
+    
+     <!-- Seccion de Hobbies -->
     <section id="Hobbies">
         <h2> Pasatiempos </h2>
         <ul>
-            <li> Beisbol</li>
-            <img src="https://image-tc.galaxy.tf/wijpeg-a84zfelwh2bq14mes4ifwt18w/oracle-stadium_standard.jpg?crop=107%2C0%2C1707%2C1280" alt="">
-            <li> Juegos de Consola </li>
-            <img src="https://cdn-3.expansion.mx/dims4/default/fc8c8df/2147483647/strip/true/crop/800x450+0+0/resize/1200x675!/format/webp/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2F1d%2F58%2Fbdc9a93b430981a7cc95efe54b3d%2Fmexico-fifa.jpg" alt="">
-        </ul>
-    </section>
-    <section id="Series">
-        <h2> Series Favoritas </h2>
-        <ul>
-            <li> Atipico </li>
-            <img src="https://img.static-rmg.be/a/view/q75/w1200/h0/4110480/5133739-jpg.jpg">
-            <li> El Oso </li>
-            <img src="https://mx.web.img3.acsta.net/pictures/22/06/10/16/53/5259982.jpg">
-            <li> All American </li>
-            <img src="https://www.abc.es/media/temporadas/000/009/820/all-american-1.jpg">
-            <li> Ultima Oportunidad Universidad </li>
-            <img src="https://149674310.v2.pressablecdn.com/wp-content/uploads/2017/08/last-chance-u-season-2-338x500.jpg">
-            <li> Cosas Extrañas </li>
-            <img src="https://media.vogue.mx/photos/5c0701f3e91fff92b2354df4/3:4/w_1200,h_1600,c_limit/las_mejores_series_de_2017_stranger_things_big_pretty_lies_the_handsmaid_tale_netflix_amazon_prime_hulu__289812538.jpg">
-        </ul>
-    </section>
-    <section id="Peliculas">
-        <h2> Peliculas Favoritas </h2>
-        <ul>
-            <li> Juego de Honor </li>
-            <img src="https://images.jdmagicbox.com/comp/jd_social/news/2018jul27/image-159310-q2c8mbz3ec.jpg">
-            <li> Somos Marshall </li>
-            <img src="https://flxt.tmsimg.com/assets/p162365_p_v8_af.jpg">
-            <li> Rocky </li>
-            <img src="https://static.wikia.nocookie.net/doblaje/images/8/8c/Rocky_iii.jpg/revision/latest?cb=20200802182411&path-prefix=es">
-            <li> En Busca de la Felicidad </li>
-            <img src="https://pics.filmaffinity.com/En_busca_de_la_felicidad-784018303-large.jpg">
-            <li> Extraordinario </li>
-            <img src="https://labutacaweb.files.wordpress.com/2017/11/extraordinario-wonder-teaser-poster966023866.jpg">
+            <li class="beis"> Beisbol</li>
+            <img class="img-beis" src="https://image-tc.galaxy.tf/wijpeg-a84zfelwh2bq14mes4ifwt18w/oracle-stadium_standard.jpg?crop=107%2C0%2C1707%2C1280" />
+            <li class="consola"> Juegos de Consola </li>
+            <img class="img-consola" src="https://cdn-3.expansion.mx/dims4/default/fc8c8df/2147483647/strip/true/crop/800x450+0+0/resize/1200x675!/format/webp/quality/90/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2F1d%2F58%2Fbdc9a93b430981a7cc95efe54b3d%2Fmexico-fifa.jpg" />
         </ul>
     </section>
 
+     <!-- Seccion de Series -->
+    <section id="Series">
+        <h2> Series Favoritas </h2>
+            <div class="card" style="width: 18rem;">
+            <img src="https://img.static-rmg.be/a/view/q75/w1200/h0/4110480/5133739-jpg.jpg" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title"> Atipico </h5>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://mx.web.img3.acsta.net/pictures/22/06/10/16/53/5259982.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title"> El Oso </h5>
+                </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.abc.es/media/temporadas/000/009/820/all-american-1.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title"> All American </h5>
+                </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://149674310.v2.pressablecdn.com/wp-content/uploads/2017/08/last-chance-u-season-2-338x500.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title"> Ultima Oportinidad </h5>
+                </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://media.vogue.mx/photos/5c0701f3e91fff92b2354df4/3:4/w_1200,h_1600,c_limit/las_mejores_series_de_2017_stranger_things_big_pretty_lies_the_handsmaid_tale_netflix_amazon_prime_hulu__289812538.jpg" class="img-fluid" />
+                <div class="card-body">
+                    <h5 class="card-title"> Cosas Extrañas </h5>
+                </div>
+    </section>
+
+    <!-- Seccion de Peliculas -->
+    <section id="Peliculas">        
+        <h2> Peliculas Favoritas </h2>
+        <div class="card" style="width: 18rem;">
+            <img src="https://images.jdmagicbox.com/comp/jd_social/news/2018jul27/image-159310-q2c8mbz3ec.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title" a > Juego de Honor </h5>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://flxt.tmsimg.com/assets/p162365_p_v8_af.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title"> Somos Marshall </h5>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://static.wikia.nocookie.net/doblaje/images/8/8c/Rocky_iii.jpg/revision/latest?cb=20200802182411&path-prefix=es" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title"> Rocky </h5>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://pics.filmaffinity.com/En_busca_de_la_felicidad-784018303-large.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title"> En Busca de la Felicidad </h5>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://labutacaweb.files.wordpress.com/2017/11/extraordinario-wonder-teaser-poster966023866.jpg" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title"> Extraordinario </h5>
+            </div>
+        </div>
+    </section>
+
+     <!-- Informacion de Contacto -->
     <footer id="Contacto"> 
-        <a title="Facebook" href="https://www.facebook.com/riveramanzanares"><img src="C:\Users\paude\Downloads\social_facebook_fb_35.png" alt="Facebook"></a>
-        <a title="Instagram" href="https://www.instagram.com/martinmanzana/"><img src="C:\Users\paude\Downloads\social_instagram_3.png" alt="Instagram"></a>
-        <a title="Twitter" href="https://twitter.com/Martimanzan"><img src="C:\Users\paude\Downloads\social_Twitter_38.png" alt="Twitter"></a>
+        <a title="Facebook" href="https://www.facebook.com/riveramanzanares"><img src="C:\Users\paude\Downloads\social_facebook_fb_35.png" class="img-fluid" alt="Facebook"></a>
+        <a title="Instagram" href="https://www.instagram.com/martinmanzana/"><img src="C:\Users\paude\Downloads\social_instagram_3.png" class="img-fluid" alt="Instagram"></a>
+        <a title="Twitter" href="https://twitter.com/Martimanzan"><img src="C:\Users\paude\Downloads\social_Twitter_38.png" class="img-fluid" alt="Twitter"></a>
     </footer>
     
 </body>
